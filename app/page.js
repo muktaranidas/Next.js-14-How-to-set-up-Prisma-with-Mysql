@@ -1,8 +1,12 @@
 import Image from "next/image";
+import DeveloperList from "./component/DeveloperList";
+
 
 export default function Home() {
   return (
    <>
-   <h1></h1></>
+   <DeveloperList></DeveloperList>
+  
+    </>
   );
 }
