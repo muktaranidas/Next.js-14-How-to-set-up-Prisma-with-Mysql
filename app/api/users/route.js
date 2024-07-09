@@ -19,8 +19,7 @@ export async function GET(){
 }
 export async function DELETE(request){
     const id = request.nextUrl.searchParams.get("id")
-    // await connectMongoDB()
-    console.log({id})
-    await prisma.user.delete({where:{id:parseInt(id)}})
+    console.log(typeof id)
+    await prisma.user.delete({where:{id:parseInt(id)}}) 
     return NextResponse.json({message: "Dev is deleted successfully"}, {status:200})
 } 
