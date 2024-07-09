@@ -30,7 +30,7 @@ export default async function DeveloperList(){
    <p className="text-pink-600">{dev.email}</p>
    </div>
    <div className="flex gap-3 items-start">
-    <RemoveBtn ></RemoveBtn>
+    <RemoveBtn id={dev.id}></RemoveBtn>
     <Link href={`/editDev/${dev.id}`}> <FaEdit size={24} /></Link>
    </div>
    </div> 
