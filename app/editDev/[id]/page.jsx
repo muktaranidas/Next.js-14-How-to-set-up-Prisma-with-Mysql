@@ -46,7 +46,7 @@ export default function editDev({email,name,params}){
         }
     }
     return (
-    <form onSubmit={handleSubmit} className=" flex flex-col gap-3">
+    <form onSubmit={handleSubmit} className=" flex flex-col gap-3 ">
         <input onChange={(e) => SetNewName(e.target.value)} value={newName}  className="border border-slate-500 py-2 px-8" type="text"/>
         <input  onChange={(e) => setNewEmail(e.target.value)} value={newEmail}   className="border border-slate-500 py-2 px-8" type="text"/>
         <button className="bg-pink-400 font-bold text-white w-fit p-4">Edit Developer</button>
