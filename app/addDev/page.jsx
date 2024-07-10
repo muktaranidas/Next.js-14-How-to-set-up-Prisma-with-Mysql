@@ -1,13 +1,10 @@
 "use client"
-
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
 export default function AddDev(){
 const [name, setName] = useState("")
 const [email, setEmail] = useState("")
 const router =useRouter()
-
     const  handleSubmit =async (e)=>{
         e.preventDefault();
         if(!name || !email){
@@ -28,12 +25,10 @@ const router =useRouter()
             }else{
                 throw new Error ("Failed to create a topic")
             }
-    
         }
             catch(error){
                 }
     }
-
     return (
         <form onSubmit={handleSubmit}  action="" className="flex flex-col gap-2">
         <input onChange={(e) => setName(e.target.value) } value= {name} className="border border-slate-500 px-8 py-2" type="text" placeholder="Fav Title" />

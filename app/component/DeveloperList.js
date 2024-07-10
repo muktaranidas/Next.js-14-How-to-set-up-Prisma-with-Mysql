@@ -20,7 +20,6 @@ const getDevelopers = async() => {
 }
 export default async function DeveloperList(){
     const users = await getDevelopers();
-    // console.log(developers)
     return(<>
     {
         users?.map((dev )=>( 
